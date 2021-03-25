@@ -121,15 +121,15 @@ li > label {
 li > input[type="text"] {
     width: 226px;
 }
-li > .delete:hover {
+li > .add-section__button_delete:hover {
     color: #CF2323;
 }
-.delete img {
+.add-section__button_delete .section__image_active {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.add-section__button_delete .section__image_active:hover {
     transform: rotateZ(0);
 }
 /* Completed */
