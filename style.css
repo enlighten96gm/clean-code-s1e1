@@ -122,7 +122,7 @@ li > input[type="text"] {
     width: 226px;
 }
 li > .add-section__button_delete:hover {
-    color: #CF2323;
+    color: #cf2323;
 }
 .add-section__button_delete .section__image_active {
     height: 2em;
