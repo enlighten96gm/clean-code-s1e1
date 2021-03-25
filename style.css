@@ -41,7 +41,8 @@ body {
     margin: 0;
     padding: 0px;
 }
-li, .every-section__h3 {
+li,
+.every-section__h3 {
     list-style: none;
 }
 /* тут первое изменение */
