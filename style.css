@@ -18,8 +18,10 @@ body {
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+
+  .header { text-align: center;
 }
+
 }
 .work-section {
     display: block;
@@ -90,7 +92,7 @@ label[for='add-section__label'] {
     display: block;
     margin: 0 0 20px;
 }
-input.add-section__wrapper_active {
+.add-section__wrapper_active {
     width: 318px;
 }
 p > button:hover {
@@ -120,18 +122,18 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
-li > button.delete:hover {
+li > .delete:hover {
     color: #CF2323;
 }
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
     transform: rotateZ(0);
 }
 
