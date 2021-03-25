@@ -10,13 +10,12 @@ body {
     display: block;
     text-align: right;
 }
-.header img {
+.header .header__image {
     width: 100%;
 }
 .header .header__item {
     font-family: fantasy, cursive;
 }
-
 @media (max-width:768px) {
 
   .header { 
@@ -41,12 +40,12 @@ body {
     margin: 0;
     padding: 0px;
 }
-li,
+.todo-section__li,
 .every-section__h3 {
     list-style: none;
 }
-/* тут первое изменение */
-input,button{
+input,
+button{
     outline: none;
 }
 button {
@@ -61,9 +60,8 @@ button {
 button:hover {
     color: #3a3A3a;
 }
-
 /* Heading */
-.every-section__h3,
+h3,
 label[for='add-section__label'] {
     color: #333;
     font-weight: 700;
@@ -88,7 +86,6 @@ input[type="text"] {
 input[type="text"]:focus {
     color: #333;
 }
-
 /* New Task */
 label[for='add-section__label'] {
     display: block;
@@ -100,13 +97,11 @@ label[for='add-section__label'] {
 p > button:hover {
     color: #0FC57C;
 }
-
 /* Task list */
 li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,7 +109,6 @@ li {
 li > * {
     vertical-align: middle;
 }
-
 li > input[type="checkbox"] {
     margin: 0 10px;
 }
@@ -138,23 +132,19 @@ li > .delete:hover {
 .delete img:hover {
     transform: rotateZ(0);
 }
-
 /* Completed */
 .completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
-
 /* Edit Task */
 .ul-section__item li input[type=text] {
     display: none;
 }
-
-.ul-section__item  li.editMode input[type=text] {
+.ul-section__item  li.todo-section__edit input[type=text] {
     display: inline-block;
     width: 224px;
 }
-
-.ul-section__item  li.editMode label {
+.ul-section__item  li.todo-section__edit label {
     display: none;
 }
