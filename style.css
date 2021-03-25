@@ -94,7 +94,7 @@ label[for='add-section__label'] {
 .add-section__wrapper_active {
   width: 318px;
 }
-p > button:hover {
+div > button:hover {
   color: #0fc57c;
 }
 /* Task list */
@@ -106,19 +106,19 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+li > html {
   vertical-align: middle;
 }
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.area__section_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.area__section_input {
   width: 226px;
 }
 .todo-section__li > .add-section__button_delete:hover {
@@ -133,18 +133,18 @@ li > input[type="text"] {
   transform: rotateZ(0);
 }
 /* Completed */
-.completed-tasks label {
+.completed-tasks .area__section_label {
   text-decoration: line-through;
   color: #888;
 }
 /* Edit Task */
-.ul-section__item li input[type=text] {
+ul li input[type=text] {
   display: none;
 }
-.ul-section__item  li.todo-section__edit input[type=text] {
+.ul-section__item .todo-section__edit .area__section_input {
   display: inline-block;
   width: 224px;
 }
-.ul-section__item  li.todo-section__edit label {
+.ul-section__item .todo-section__edit .area__section_label {
   display: none;
 }

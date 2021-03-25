@@ -13,7 +13,6 @@ var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.querySelector(".ul-section__item ");//ul of #incompleteTasks
 var completedTasksHolder=document.querySelector(".completed-tasks");//completed-tasks
 
-
 //New task list item
 var createNewTaskElement=function(taskString){
 
@@ -37,6 +36,7 @@ var createNewTaskElement=function(taskString){
 
     label.innerText=taskString;
     label.className='common__task';
+    label.classList.add('area__section_label')
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -90,6 +90,7 @@ var editTask=function(){
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".add-section__button_edit");
     var containsClass=listItem.classList.contains("todo-section__edit");
+    editInput.classList.add('area__section_input')
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -105,6 +106,7 @@ var editTask=function(){
     //toggle .editmode on the parent.
     listItem.classList.toggle("todo-section__edit");
 };
+
 
 
 //Delete task.
@@ -127,7 +129,6 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
