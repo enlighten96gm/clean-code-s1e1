@@ -34,11 +34,11 @@ body {
 .add-section__wrapper {
     display: flex;
 }
-ul {
+.ul-section__item  {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+li, .every-section__h3 {
     list-style:none;
 }
 /* тут первое изменение */
@@ -57,8 +57,9 @@ button {
 button:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
-h3,
+.every-section__h3,
 label[for='add-section__label'] {
     color: #333;
     font-weight: 700;
@@ -135,21 +136,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul.completed-tasks label {
+.completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.ul-section__item li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.ul-section__item  li.editMode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.ul-section__item  li.editMode label {
     display:none;
 }
