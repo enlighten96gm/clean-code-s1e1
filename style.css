@@ -121,7 +121,7 @@ li > label {
 li > input[type="text"] {
     width: 226px;
 }
-li > .add-section__button_delete:hover {
+.todo-section__li > .add-section__button_delete:hover {
     color: #cf2323;
 }
 .add-section__button_delete .section__image_active {
